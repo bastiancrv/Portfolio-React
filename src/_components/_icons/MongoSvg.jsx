@@ -5,6 +5,7 @@ function MongoSvg({ className = "", width }) {
     <svg
       className={className}
       width={width}
+      height={width}
       viewBox="0 0 256 549"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

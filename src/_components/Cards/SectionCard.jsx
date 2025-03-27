@@ -24,7 +24,7 @@ function SectionCard({
     <div>
       <div
         onClick={() => setIsVisible(!isVisible)}
-        className="p-4 border rounded-lg border-neutral-500/60 flex flex-col cursor-pointer group hover:bg-neutral-700/70 transition-all duration-300 shadow-2xl shadow-neutral-900"
+        className="p-4 border rounded-lg border-neutral-500/60 flex flex-col cursor-pointer group hover:bg-neutral-700/70 transition-all duration-300 shadow-2xl shadow-neutral-900 max-md:hover:bg-transparent "
       >
         <div className="flex justify-between gap-10 ">
           <div className="flex justify-center flex-col">
@@ -33,7 +33,10 @@ function SectionCard({
           </div>
           <div className="flex flex-col gap-2 items-center justify-center">
             {groupedTechnologies.map((group, groupIndex) => (
-              <div className="flex gap-2 flex-wrap sm:flex-nowrap" key={groupIndex}>
+              <div
+                className="flex gap-2 flex-wrap sm:flex-nowrap"
+                key={groupIndex}
+              >
                 {group.map((tech, index) => (
                   <CodeText className="text-xs flex items-center" key={index}>
                     {React.cloneElement(tech.icon, { width: "14px" })}
@@ -47,7 +50,7 @@ function SectionCard({
         <div
           className={`overflow-hidden transition-all duration-700 ease-in-out transform ${
             isVisible
-              ? "max-h-[1000px] opacity-100 translate-y-0 scale-100"
+              ? "max-h-[2000px] opacity-100 translate-y-0 scale-100"
               : "max-h-0 opacity-0 -translate-y-4 scale-95"
           }`}
         >
