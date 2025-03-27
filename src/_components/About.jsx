@@ -66,7 +66,7 @@ function About() {
             Mysql
           </CodeText>
           <CodeText url="https://www.mongodb.com/fr-fr">
-            <MongoSvg className="animate-pulse" width={"10px"} />
+            <MongoSvg className="animate-pulse" width={"20px"} />
             MongoDb
           </CodeText>
           <CodeText url="https://www.docker.com/">
