@@ -12,6 +12,7 @@ import Me from "../assets/me.png";
 import Cv from "../assets/cv.pdf";
 import DockerSvg from "./_icons/DockerSvg";
 import NodeSvg from "./_icons/NodeSvg";
+import PythonSvg from "./_icons/PythonSvg";
 
 function About() {
   return (
@@ -60,6 +61,10 @@ function About() {
           <CodeText url="https://www.php.net/">
             <PhpSvg className="animate-pulse" width={"18px"} />
             Php
+          </CodeText>
+          <CodeText url="https://www.php.net/">
+            <PythonSvg className="animate-pulse" width={"18px"} />
+            Python
           </CodeText>
           <CodeText url="https://www.mysql.com/fr/">
             <MySqlSvg className="animate-pulse" width={"18px"} />
