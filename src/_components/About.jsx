@@ -14,6 +14,71 @@ import DockerSvg from "./_icons/DockerSvg";
 import NodeSvg from "./_icons/NodeSvg";
 import PythonSvg from "./_icons/PythonSvg";
 
+const techList = [
+  {
+    name: "React",
+    url: "https://fr.react.dev/",
+    icon: (
+      <ReactSvg width="18px" style={{ animation: "spin 5s linear infinite" }} />
+    ),
+  },
+  {
+    name: "Tailwind",
+    url: "https://tailwindcss.com/",
+    icon: <TailwindSvg className="animate-pulse" width="20px" />,
+  },
+  {
+    name: "Html",
+    url: "https://developer.mozilla.org/fr/docs/Web/HTML",
+    icon: <HtmlSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Css",
+    url: "https://developer.mozilla.org/fr/docs/Web/CSS",
+    icon: <CssSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Javascript",
+    url: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
+    icon: <JsSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Node.Js",
+    url: "https://nodejs.org/en",
+    icon: <NodeSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Java",
+    url: "https://fr.wikipedia.org/wiki/Java_(langage)",
+    icon: <JavaSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Php",
+    url: "https://www.php.net/",
+    icon: <PhpSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Python",
+    url: "https://www.php.net/",
+    icon: <PythonSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Mysql",
+    url: "https://www.mysql.com/fr/",
+    icon: <MySqlSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "MongoDb",
+    url: "https://www.mongodb.com/fr-fr",
+    icon: <MongoSvg className="animate-pulse" width="20px" />,
+  },
+  {
+    name: "Docker",
+    url: "https://www.docker.com/",
+    icon: <DockerSvg className="animate-pulse" width="14px" />,
+  },
+];
+
 function About() {
   return (
     <div className="flex flex-col jusitfy-center items-center gap-8 text-center w-fit mb-10 ">
@@ -26,63 +91,18 @@ function About() {
         mois <br />{" "}
         <span className="font-bold">Développement Web et/ou Cybersécurité</span>{" "}
         <br />
-        <div className="inline-flex gap-4 justify-center mt-2 flex-wrap">
-          <CodeText url="https://fr.react.dev/">
-            <ReactSvg
-              width={"18px"}
-              style={{ animation: "spin 5s linear infinite " }}
-            />
-            React
-          </CodeText>
-          <CodeText url="https://tailwindcss.com/">
-            <TailwindSvg className="animate-pulse" width={"20px"} />
-            Tailwind
-          </CodeText>
-          <CodeText url="https://developer.mozilla.org/fr/docs/Web/HTML">
-            <HtmlSvg className="animate-pulse" width={"18px"} />
-            Html
-          </CodeText>
-          <CodeText url="https://developer.mozilla.org/fr/docs/Web/CSS">
-            <CssSvg className="animate-pulse" width={"18px"} />
-            Css
-          </CodeText>
-          <CodeText url="https://developer.mozilla.org/fr/docs/Web/JavaScript">
-            <JsSvg className="animate-pulse" width={"18px"} />
-            Javascript
-          </CodeText>
-          <CodeText url="https://nodejs.org/en">
-            <NodeSvg className="animate-pulse" width={"18px"} />
-            Node.Js
-          </CodeText>
-          <CodeText url="https://fr.wikipedia.org/wiki/Java_(langage)">
-            <JavaSvg className="animate-pulse" width={"18px"} />
-            Java
-          </CodeText>
-          <CodeText url="https://www.php.net/">
-            <PhpSvg className="animate-pulse" width={"18px"} />
-            Php
-          </CodeText>
-          <CodeText url="https://www.php.net/">
-            <PythonSvg className="animate-pulse" width={"18px"} />
-            Python
-          </CodeText>
-          <CodeText url="https://www.mysql.com/fr/">
-            <MySqlSvg className="animate-pulse" width={"18px"} />
-            Mysql
-          </CodeText>
-          <CodeText url="https://www.mongodb.com/fr-fr">
-            <MongoSvg className="animate-pulse" width={"20px"} />
-            MongoDb
-          </CodeText>
-          <CodeText url="https://www.docker.com/">
-            <DockerSvg className="animate-pulse" width={"14px"} />
-            Docker
-          </CodeText>
+        <div className="inline-flex gap-4 justify-center mt-2 flex-wrap max-w-4xl w-full mx-auto ">
+          {techList.map(({ name, url, icon }) => (
+            <CodeText key={name} url={url}>
+              {icon}
+              {name}
+            </CodeText>
+          ))}
         </div>
       </p>
       <div>
         <img
-          className="mt-14 shadow-xl rounded-full shadow-blue-300 hover:scale-105 transition-all duration-500 max-md:w-60 "
+          className="mt-14 shadow-xl rounded-full hover:scale-105 hover:shadow-2xl hover:shadow-blue-300 shadow-blue-300 transition-all duration-500 max-md:w-80 "
           width="600px"
           src={Me}
           alt=""

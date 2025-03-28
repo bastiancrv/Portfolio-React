@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import ContactButton from "./ContactButton";
 import ReactSvg from "./_icons/ReactSvg";
 import TailwindSvg from "./_icons/TailwindSvg";
