@@ -284,14 +284,14 @@ function App() {
                       <span className="italic underline">Tronc commun</span>{" "}
                       <br /> <br />
                       <ul className="list-disc list-inside flex flex-col gap-2">
-                        <CodeText>Algorithmie</CodeText>
-                        <CodeText>Web</CodeText>
-                        <CodeText>Jeux vidéos</CodeText>
+                        <CodeText>Web / Mobile</CodeText>
                         <CodeText>Réseaux</CodeText>
+                        <CodeText>Devops</CodeText>
+                        <CodeText>Algorithmie</CodeText>
                         <CodeText>Docker</CodeText>
+                        <CodeText>Jeux vidéos</CodeText>
                         <CodeText>MERN</CodeText>
                         <CodeText>Php Symfony</CodeText>
-                        <CodeText>Devops</CodeText>
                       </ul>{" "}
                     </div>
                     <span className="border-[0.5px] rounded-full"></span>
@@ -300,8 +300,8 @@ function App() {
                       <br /> <br />
                       <ul className="list-disc list-inside flex flex-col gap-2">
                         <CodeText>Cybersécurité</CodeText>
-                        <CodeText>IA</CodeText>
                         <CodeText>Cloud</CodeText>
+                        <CodeText>IA</CodeText>
                         <CodeText>Data</CodeText>
                         <CodeText>IOT</CodeText>
                         <CodeText>VR</CodeText>
