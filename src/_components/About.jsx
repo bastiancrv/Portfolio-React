@@ -14,7 +14,7 @@ import DockerSvg from "./_icons/DockerSvg";
 import NodeSvg from "./_icons/NodeSvg";
 import PythonSvg from "./_icons/PythonSvg";
 
-const techList = [
+const technoList = [
   {
     name: "React",
     url: "https://fr.react.dev/",
@@ -92,7 +92,7 @@ function About() {
         <span className="font-bold">Développement Web et/ou Cybersécurité</span>{" "}
         <br />
         <div className="inline-flex gap-4 justify-center mt-2 flex-wrap max-w-4xl w-full mx-auto ">
-          {techList.map(({ name, url, icon }) => (
+          {technoList.map(({ name, url, icon }) => (
             <CodeText key={name} url={url}>
               {icon}
               {name}
