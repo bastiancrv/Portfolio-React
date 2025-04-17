@@ -101,7 +101,7 @@ function About() {
       <p className="flex-wrap">
         Étudiant en Master à Epitech Marseille, je recherche une{" "}
         <span className="font-bold italic underline">alternance</span> de 24
-        mois <br />{" "}
+        mois à débuter en <span className="font-bold italic">septembre 2025</span><br />{" "}
         <span className="font-bold">Développement Web et/ou Cybersécurité</span>{" "}
         <br />
         <div className="inline-flex gap-4 justify-center mt-2 flex-wrap max-w-4xl w-full mx-auto ">
