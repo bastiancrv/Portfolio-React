@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <main className="bg-neutral-800 h-full p-6 font-poppins text-neutral-300">
-        <div className="w-fit mx-auto flex flex-col gap-40 max-sm:gap-20">
+        <div className="mx-auto flex flex-col gap-40 max-sm:gap-20">
           <nav>
             <NavBar />
           </nav>
