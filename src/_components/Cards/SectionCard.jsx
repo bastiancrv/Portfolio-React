@@ -8,10 +8,13 @@ function SectionCard({
   technologies,
   children,
   image,
+  image2,
+  image3,
   linkgithub,
   ShowProject = false,
   SecondImage = false,
-  image2,
+  ThirdImage = false,
+  inlineImages = false,
 }) {
   const groupedTechnologies = [];
   for (let i = 0; i < technologies.length; i += 3) {
@@ -31,7 +34,7 @@ function SectionCard({
             <h1 className="text-md font-semibold">{title}</h1>
             {subtitle && <p className="text-xs text-neutral-400">{subtitle}</p>}
           </div>
-          <div className="flex flex-col gap-2 items-center justify-center">
+          <div className="flex flex-col gap-2 items-end justify-center">
             {groupedTechnologies.map((group, groupIndex) => (
               <div
                 className="flex gap-2 flex-wrap sm:flex-nowrap"
@@ -54,21 +57,37 @@ function SectionCard({
               : "max-h-0 opacity-0 -translate-y-4 scale-95"
           }`}
         >
-          <div className="flex flex-col gap-6 max-w-[400px] text-wrap items-center pt-4">
-            <div className="transition-all duration-500 ease-in-out flex flex-col gap-2">
+          <div className="flex flex-col gap-6 max-w-[440px] text-wrap items-center pt-4">
+            <div
+              className={`transition-all duration-500 ease-in-out gap-2 ${
+                inlineImages
+                  ? "flex flex-row justify-center items-start gap-4 flex-wrap"
+                  : "flex flex-col"
+              }`}
+            >
               <img
-                className="rounded-xl shadow-xl"
+                className="rounded-xl shadow-xl max-w-[400px] max-h-[400px] "
                 src={image}
-                width={"auto"}
+                alt=""
               />
-              {SecondImage && (
+
+              {SecondImage && image2 && (
                 <img
-                  className="rounded-xl shadow-xl"
+                  className="rounded-xl shadow-xl max-w-[400px] max-h-[400px]"
                   src={image2}
-                  width={"auto"}
+                  alt=""
+                />
+              )}
+
+              {ThirdImage && image3 && (
+                <img
+                  className="rounded-xl shadow-xl max-w-[400px] max-h-[400px]"
+                  src={image3}
+                  alt=""
                 />
               )}
             </div>
+
             <div className="flex items-center justify-center transition-all duration-300 shadow-md shadow-transparent hover:shadow-neutral-400 w-fit">
               {ShowProject && (
                 <a href={linkgithub}>

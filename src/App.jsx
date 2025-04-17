@@ -10,6 +10,7 @@ import LyceePng from "./_components/_icons/LyceePng";
 import OrtecPng from "./_components/_icons/OrtecPng";
 import MySqlSvg from "./_components/_icons/MySqlSvg";
 import NodeSvg from "./_components/_icons/NodeSvg";
+import ExpoSvg from "./_components/_icons/ExpoSvg";
 import ExpressSvg from "./_components/_icons/ExpressSvg";
 import MongoSvg from "./_components/_icons/MongoSvg";
 import SocketSvg from "./_components/_icons/SocketSvg";
@@ -23,11 +24,16 @@ import Habbo1 from "./assets/habbo1.png";
 import Habbo2 from "./assets/habbo2.png";
 import irc1 from "./assets/irc1.png";
 import irc2 from "./assets/irc2.png";
+import trello1 from "./assets/trello1.jpg";
+import trello2 from "./assets/trello2.jpg";
+import trello3 from "./assets/trello3.2.jpg";
 import Jobboard from "./assets/jobboard.png";
 import OrtecImg from "./assets/ortec.jpg";
 import eloi from "./assets/eloi.jpg";
 import epitech from "./assets/epitechmrs.jpg";
-
+import MajoliImg from "./assets/majoli.png";
+import MajoliPng from "./_components/_icons/MajoliPng";
+import TsSvg from "./_components/_icons/TsSvg";
 import CodeText from "./_components/CodeText";
 
 function App() {
@@ -80,7 +86,12 @@ function App() {
                   linkgithub={
                     "https://github.com/bastiancrv/Projects/tree/main/HabboFx"
                   }
-                  technologies={[{ name: "Java", icon: <JavaSvg className="animate-pulse" /> }]}
+                  technologies={[
+                    {
+                      name: "Java",
+                      icon: <JavaSvg className="animate-pulse" />,
+                    },
+                  ]}
                 >
                   Projet de création d&apos;un jeu vidéo,{" "}
                   <span className="underline italic">HabboFx</span>, inspiré du
@@ -125,11 +136,20 @@ function App() {
                     "https://github.com/bastiancrv/Projects/tree/main/JobBoard"
                   }
                   technologies={[
-                    { name: "Html", icon: <HtmlSvg className="animate-pulse" /> },
+                    {
+                      name: "Html",
+                      icon: <HtmlSvg className="animate-pulse" />,
+                    },
                     { name: "Css", icon: <CssSvg className="animate-pulse" /> },
-                    { name: "Javascript", icon: <JsSvg className="animate-pulse" /> },
+                    {
+                      name: "Javascript",
+                      icon: <JsSvg className="animate-pulse" />,
+                    },
                     { name: "Php", icon: <PhpSvg className="animate-pulse" /> },
-                    { name: "Mysql", icon: <MySqlSvg className="animate-pulse" /> },
+                    {
+                      name: "Mysql",
+                      icon: <MySqlSvg className="animate-pulse" />,
+                    },
                   ]}
                 >
                   Projet de création d&apos;un site{" "}
@@ -192,11 +212,26 @@ function App() {
                         />
                       ),
                     },
-                    { name: "Tailwind", icon: <TailwindSvg className="animate-pulse" /> },
-                    { name: "Node.Js", icon: <NodeSvg className="animate-pulse" /> },
-                    { name: "Express.Js", icon: <ExpressSvg className="animate-pulse" /> },
-                    { name: "Socket.io", icon: <SocketSvg className="animate-pulse" /> },
-                    { name: "MongoDb", icon: <MongoSvg className="animate-pulse" /> },
+                    {
+                      name: "Tailwind",
+                      icon: <TailwindSvg className="animate-pulse" />,
+                    },
+                    {
+                      name: "Node.Js",
+                      icon: <NodeSvg className="animate-pulse" />,
+                    },
+                    {
+                      name: "Express.Js",
+                      icon: <ExpressSvg className="animate-pulse" />,
+                    },
+                    {
+                      name: "Socket.io",
+                      icon: <SocketSvg className="animate-pulse" />,
+                    },
+                    {
+                      name: "MongoDb",
+                      icon: <MongoSvg className="animate-pulse" />,
+                    },
                   ]}
                 >
                   Projet de création d&apos;un site de{" "}
@@ -234,12 +269,15 @@ function App() {
                 </SectionCard>
                 <SectionCard
                   title={"Trellosaurus"}
-                  SecondImage={false}
-                //   image={irc1}
-                //   image2={irc2}
-                  ShowProject={false}
+                  SecondImage={true}
+                  ThirdImage={true}
+                  image={trello1}
+                  image2={trello2}
+                  image3={trello3}
+                  ShowProject={true}
+                  inlineImages={true}
                   linkgithub={
-                    "https://github.com/bastiancrv/Projects/tree/main/Portfolio"
+                    "https://github.com/bastiancrv/Projects/tree/main/Trellosaurus"
                   }
                   technologies={[
                     {
@@ -250,10 +288,50 @@ function App() {
                         />
                       ),
                     },
-                    { name: "Tailwind", icon: <TailwindSvg className="animate-pulse" /> },
-                    { name: "Node.Js", icon: <NodeSvg className="animate-pulse" /> },
+                    {
+                      name: "Tailwind",
+                      icon: <TailwindSvg className="animate-pulse" />,
+                    },
+                    {
+                      name: "Expo",
+                      icon: <ExpoSvg className="animate-pulse" />,
+                    },
+                    {
+                      name: "Typescript",
+                      icon: <TsSvg className="animate-pulse" />,
+                    },
                   ]}
-                >Projet toujours en cours...</SectionCard>
+                >
+                  Projet de création d&apos;une application de{" "}
+                  <span className="font-bold">gestion de projet</span> utilisant
+                  l&apos;api Trello. <br /> <br />
+                  <ul className="list-disc list-inside text-left">
+                    <h1 className="text-center font-extralight italic underline">
+                      Fonctionnalités présentes :
+                    </h1>
+                    <li>
+                      <span className="font-semibold">CRUD</span> complet des
+                      boards / lists / cards ✅
+                    </li>
+                    <li>Système de templates prédéfinis ✅</li>
+                    <li>
+                      Affecter un d&apos;utilisateur aux listes et tâches ✅
+                    </li>
+                    <li>
+                      <span className="font-semibold">Oauth2</span> via Trello
+                      ✅
+                    </li>
+                  </ul>{" "}
+                  <br />
+                  <ul className="list-disc list-inside text-left">
+                    <h1 className="text-center font-extralight italic underline">
+                      Fonctionnalités à venir :
+                    </h1>
+                    <li>CRUD des workspaces ❌</li>
+                    <li>Tags / dates dans les cards ❌</li>
+                    <li>Pièces jointes dans la description des cards ❌</li>
+                  </ul>
+                </SectionCard>
               </Card>
             </div>
             <div className="flex flex-col gap-4">
@@ -345,6 +423,31 @@ function App() {
               </Card>
               <Card title={"Expériences Professionelles"}>
                 <SectionCard
+                  title={"Développeur Web"}
+                  image={MajoliImg}
+                  subtitle={"2025 - aujourd'hui"}
+                  technologies={[{ name: "Majoli.io", icon: <MajoliPng /> }]}
+                >
+                  Alternant{" "}
+                  <span className="font-semibold">Développeur Web</span> <br />{" "}
+                  <br />
+                  Création, amélioration et maintenance de sites web pour des
+                  clients. <br /> <br />
+                  Allant de simples sites vitrines à des sites biens plus
+                  complexes avec des systèmes de réservations, de paiements en
+                  ligne, de gestion de stocks... <br /> <br />
+                  <div className="w-full flex flex-col justify-center items-center">
+                    <br />
+                    <ul className="list-disc list-inside flex flex-row gap-2 flex-wrap items-center justify-center ">
+                      <CodeText>React</CodeText>
+                      <CodeText>Node.Js</CodeText>
+                      <CodeText>MongoDb</CodeText>
+                      <CodeText>Tailwind</CodeText>
+                      <CodeText>Bubble.io</CodeText>
+                    </ul>{" "}
+                  </div>
+                </SectionCard>
+                <SectionCard
                   title={"Admin Systèmes et Réseaux"}
                   image={OrtecImg}
                   subtitle={"2022"}
@@ -360,8 +463,10 @@ function App() {
                   Logiciel <br /> <br />
                   Administration Système avec Active Directory | Attribution de
                   licences et permissions <br /> <br />
-                  Assistance et dépannage de pannes | Support niveau 1 <br/> <br/>
-                  Configuration d&apos;un serveur de données : bios, contrôleur de stockage, réseau, dossiers partagés...
+                  Assistance et dépannage de pannes | Support niveau 1 <br />{" "}
+                  <br />
+                  Configuration d&apos;un serveur de données : bios, contrôleur
+                  de stockage, réseau, dossiers partagés...
                   <div className="w-full flex flex-col justify-center items-center">
                     <br />
                     <ul className="list-disc list-inside flex flex-row gap-2 flex-wrap items-center justify-center ">

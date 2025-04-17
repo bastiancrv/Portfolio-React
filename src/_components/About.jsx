@@ -13,11 +13,19 @@ import Cv from "../assets/cv.pdf";
 import DockerSvg from "./_icons/DockerSvg";
 import NodeSvg from "./_icons/NodeSvg";
 import PythonSvg from "./_icons/PythonSvg";
+import TsSvg from "./_icons/TsSvg";
 
 const technoList = [
   {
     name: "React",
     url: "https://fr.react.dev/",
+    icon: (
+      <ReactSvg width="18px" style={{ animation: "spin 5s linear infinite" }} />
+    ),
+  },
+  {
+    name: "React Native",
+    url: "https://reactnative.dev/",
     icon: (
       <ReactSvg width="18px" style={{ animation: "spin 5s linear infinite" }} />
     ),
@@ -41,6 +49,11 @@ const technoList = [
     name: "Javascript",
     url: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
     icon: <JsSvg className="animate-pulse" width="18px" />,
+  },
+  {
+    name: "Typescript",
+    url: "https://www.typescriptlang.org/",
+    icon: <TsSvg className="animate-pulse" width="18px" />,
   },
   {
     name: "Node.Js",
