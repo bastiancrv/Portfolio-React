@@ -27,7 +27,7 @@ function SectionCard({
     <div>
       <div
         onClick={() => setIsVisible(!isVisible)}
-        className="p-4 border rounded-lg border-neutral-500/60 flex flex-col cursor-pointer group hover:bg-neutral-700/70 transition-all duration-300 shadow-2xl shadow-neutral-900 max-md:hover:bg-transparent "
+        className="p-4 border rounded-lg border-neutral-500/60 flex flex-col cursor-pointer group hover:bg-neutral-700/70 transition-all duration-300 shadow-2xl shadow-neutral-900 max-md:hover:bg-transparent"
       >
         <div className="flex justify-between gap-10 ">
           <div className="flex justify-center flex-col">

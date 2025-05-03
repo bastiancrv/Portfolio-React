@@ -152,11 +152,11 @@ function App() {
                     },
                   ]}
                 >
-                  Projet de création d&apos;un site{" "}
+                  Projet de création d&apos;un site web{" "}
                   <span className="font-bold">
                     d&apos;annonce d&apos;emploi.
                   </span>{" "}
-                  <br /> <br />
+                  <br /> Je me suis occupé essentiellement de la partie <span className="font-bold">backend</span> que je n&apos;avais que très peu pratiqué auparavant, ce qui à été un excellent challenge  <br/><br />
                   <ul className="list-disc list-inside text-left">
                     <h1 className="text-center font-extralight italic underline">
                       Fonctionnalités présentes :
