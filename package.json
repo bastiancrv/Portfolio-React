@@ -10,7 +10,7 @@
         "lint": "eslint .",
         "preview": "vite preview",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "GIT=$(which git) gh-pages -d dist"
     },
     "dependencies": {
         "@formspree/react": "^2.5.1",
